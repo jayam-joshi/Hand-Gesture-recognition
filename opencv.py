@@ -2,11 +2,9 @@ import cv2
 import imutils
 import numpy as np
 
-# global variables
+
 bg = None
-#--------------------------------------------------
-# To find the running average over the background
-#--------------------------------------------------
+
 def run_avg(image, aWeight):
     global bg
     # initialize the background
@@ -14,11 +12,9 @@ def run_avg(image, aWeight):
         bg = image.copy().astype("float")
         return
 
-    # compute weighted average, accumulate it and update the background
+    
     cv2.accumulateWeighted(image, bg, aWeight)
-    #---------------------------------------------
-# To segment the region of hand in the image
-#---------------------------------------------
+
 def segment(image, threshold=25):
     global bg
     # find the absolute difference between background and current frame
@@ -34,7 +30,7 @@ def segment(image, threshold=25):
     if len(cnts) == 0:
         return
     else:
-        # based on contour area, get the maximum contour which is the hand
+        
         segmented = max(cnts, key=cv2.contourArea)
         return (thresholded, segmented)
 
