@@ -40,7 +40,7 @@ To obtain a binary image frame of the hand the following techniques are used
 To seperate hand from background
 ### Thresholding
 To detect the hand region from the difference image, difference image is thresholded, so that only the hand region becomes visible and pixels of all unwanted regions are set to zero.
-
+![Capture](https://user-images.githubusercontent.com/82452505/138595329-dad9b00f-3599-4408-b174-29a6de13fa7f.PNG)
 
 
 
