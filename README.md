@@ -1,5 +1,5 @@
 # Hand-Gesture-recognition
-Predicting the digit lying between 1 and 6 depicted by hand gesture using convolutional neural network and computer vision.## Libraries and tools
+Predicting the digit lying between 1 and 6 depicted by hand gesture using convolutional neural network and computer vision.
 ## Tools and languages
 <img src="https://github.com/github/explore/raw/main/topics/python/python.png" width="50" height="50" />        <img src="https://github.com/github/explore/raw/main/topics/tensorflow/tensorflow.png" width="50" height="50" />       <img src="https://github.com/github/explore/raw/main/topics/opencv/opencv.png" width="50" height="50" />
 
